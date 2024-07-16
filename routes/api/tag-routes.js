@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Handles GET requests to fetch a single tag by its ID, including its associated products.
+// Handles GET requests to fetch a single tag by its ID, including its associated products..
 router.get('/:id', async (req, res) => {
   try {
     const tag = await Tag.findByPk(req.params.id, {
